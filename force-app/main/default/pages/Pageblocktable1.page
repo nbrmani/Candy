@@ -1,0 +1,21 @@
+<apex:page standardController="Account" recordSetVar="items">
+<apex:pageBlock title="PageBlockTable">
+<apex:pageblockTable value="{!items}" var="a" rows="2">
+<apex:column value="{!a.name}"/>
+<apex:column value="{!a.industry}"/>
+<apex:column value="{!a.type}"/>
+</apex:pageblockTable>
+</apex:pageBlock>
+<apex:pageBlock title="PageBlockTable2">
+<apex:pageblockTable value="{!items}" var="a" columnswidth="100,50,50" >
+<apex:facet name="caption">PageBlocktable Caption</apex:facet>
+<apex:facet name="header">PageBlocktable header</apex:facet>
+<apex:facet name="footer">PageBlocktable footer</apex:facet>
+<apex:column value="{!a.name}"/>
+<apex:column value="{!a.industry}"/>
+<apex:column value="{!a.type}"/>
+</apex:pageblockTable>
+</apex:pageBlock>
+
+
+</apex:page>
