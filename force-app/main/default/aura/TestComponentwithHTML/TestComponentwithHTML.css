@@ -1,0 +1,13 @@
+.THIS.aa {
+    text-shadow: 3px 2px red;
+}
+
+.THIS .bb{
+    color: green;
+    font-style: bold;
+}
+
+.THIS .cc{
+    color: white;
+    font-style: bold;
+}

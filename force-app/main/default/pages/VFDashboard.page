@@ -1,0 +1,43 @@
+<apex:page standardController="Account">
+<apex:sectionHeader title="Candy" subtitle="Sanjay" rendered="true" help="http://google.com" description="description" printUrl="http://google.com"/> 
+{!1+2}<br/>{!"Rajamani"}<br/>{!isnull(10)}
+{! $User.FirstName}<br/>
+{! $User.LastName}<br/> {!$Organization.Name}<br/>{!$Profile.Name}<br/>
+{! $CurrentPage.parameters.name} 
+{! $CurrentPage.parameters.age} <br/>
+{! account.name}===={!account.industry}<br/>
+<apex:form >
+<apex:inputtext value="{!account.name}" /> <br/>
+<apex:inputfield value="{!account.industry}" /> <br/>
+<apex:inputSecret value="{!account.name}" /> <br/>
+<apex:inputhidden value="{!account.name}" /> <br/>
+</apex:form>
+<apex:form >
+<apex:selectList size="1">
+<apex:selectOption itemLabel="None" itemValue="none"/>
+<apex:selectOption itemLabel="Jan" itemValue="one"/>
+<apex:selectOption itemLabel="FEb" itemValue="two"/>
+<apex:selectOption itemLabel="Mar" itemValue="three" itemDisabled="true"/>
+<apex:selectOption itemLabel="April" itemValue="four" itemDisabled="true"/>
+<apex:selectOption itemLabel="May" itemValue="five" itemEscaped="true"/>
+<apex:selectOption itemLabel="April" itemValue="four" itemEscaped="true"/>
+</apex:selectList>
+<apex:selectCheckboxes borderVisible="true"  label="my choice" legendText="my lenged" legendInvisible="false">
+<apex:selectOption itemLabel="None" itemValue="none"/>
+<apex:selectOption itemLabel="Jan" itemValue="one"/>
+<apex:selectOption itemLabel="FEb" itemValue="two"/>
+<apex:selectOption itemLabel="Mar" itemValue="three" itemDisabled="true"/>
+<apex:selectOption itemLabel="April" itemValue="four" itemDisabled="true"/>
+<apex:selectOption itemLabel="May" itemValue="five" itemEscaped="true"/>
+<apex:selectOption itemLabel="April" itemValue="four" itemEscaped="true"/>
+</apex:selectCheckboxes>
+<apex:selectRadio legendText="radio" bordervisible="true"><apex:selectOption itemLabel="None" itemValue="none"/>
+<apex:selectOption itemLabel="Jan" itemValue="one"/>
+<apex:selectOption itemLabel="FEb" itemValue="two"/>
+<apex:selectOption itemLabel="Mar" itemValue="three" itemDisabled="true"/>
+<apex:selectOption itemLabel="April" itemValue="four" itemDisabled="true"/>
+<apex:selectOption itemLabel="May" itemValue="five" itemEscaped="true"/>
+<apex:selectOption itemLabel="April" itemValue="four" itemEscaped="true"/></apex:selectRadio>
+</apex:form>
+
+</apex:page>

@@ -1,0 +1,11 @@
+<apex:page >
+<apex:form >
+<apex:pageBlock title="Pageblock Title" helpTitle="Help-Rajamani" helpUrl="www.google.com">
+<apex:outputLabel value="Name" />
+<apex:inputText id="one1"/>
+</apex:pageBlock>
+<apex:pageBlock title="block2" ><apex:commandButton value="MyButton" action="{!save}"/> </apex:pageBlock>
+<apex:pageBlock title="block3"><apex:pageBlockButtons location="top"><apex:commandButton value="MyButton" action="{!save}"/> </apex:pageBlockButtons> </apex:pageBlock>
+
+</apex:form>
+</apex:page>
